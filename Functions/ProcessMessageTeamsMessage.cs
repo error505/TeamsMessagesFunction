@@ -9,7 +9,7 @@ using Newtonsoft.Json;
 
 namespace MicrosoftTeamsNotification;
 
-public class ProcessMyTaskIndex
+public class ProcessMessage
 {
 	[FunctionName("ProcessMessage")]
 	public async Task Run([ServiceBusTrigger("testqueue", Connection = "ServiceBusConnection")] string myQueueItem, ILogger log)
